@@ -1,0 +1,80 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/" . "zizitop/")
+ ("/home/zizitop/workspace/" . "lisp/")
+ ("/home/zizitop/" . "workspace/")
+ ("/home/zizitop/workspace/lisp/" . "old/")
+ ("/home/zizitop/workspace/FemtoOS/src/kernel/arch/" . "i386/")
+ ("/home/zizitop/workspace/FemtoOS/src/kernel/" . "arch/")
+ ("/home/zizitop/workspace/FemtoOS/src/" . "kernel/")
+ ("/home/zizitop/workspace/FemtoOS/" . "src/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/zizitop/workspace/LABS/CG_LAB_3/out/artifacts/CG_LAB_3_jar/"
+ "/home/zizitop/workspace/lisp/old/"
+ "/home/zizitop/workspace/lisp/"
+ "/home/zizitop/workspace/haskell/"
+ "/home/zizitop/.emacs.d/"
+ "/home/zizitop/"
+ "/home/zizitop/workspace/lisp/hw3/"
+ "/home/zizitop/workspace/lisp/hw2/"
+ "/home/zizitop/workspace/FemtoOS/src/kernel/"
+ "/home/zizitop/workspace/FemtoOS/src/kernel/arch/i386/"
+ "/home/zizitop/workspace/FemtoOS/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "test.lisp"
+ "kolpakov_ct2.lisp"
+ "kolpakov.lsp"
+ "test.hs"
+ "init.el"
+ "ac-comphist.dat"
+ "code_is_145"
+ "pr4.lsp"
+ "lp2.lsp"
+ "lc7.lsp"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/zizitop/workspace/LABS/CG_LAB_3/out/artifacts/CG_LAB_3_jar/" (23981 64886 943303 19000) "./" "test.lisp" "../" "CG_LAB_3.jar")
+
+ ("/home/zizitop/" (23981 64699 499974 269000) ".local/" ".qmmp/" ".xinitrc" ".pgAdmin4.14205473332193902643.addr" "./" ".#help" "Музыка/" ".Xclients" ".dir_colors" ".playminicraft/" "SILVER_USB.zip" ".IdeaIC2019.2/" ".ghc/" ".IdeaIC2018.3/" ".IdeaIC2018.2/" "pasw.zip" ".gnupg/" ".visualvm/" ".audacity-data/" ".jak/" ".xboardrc" ".emacs.d/" ".guayadeque/" ".bashrc" ".kodi/" ".celestiarc" ".dbus/" ".lincity-ng/" ".eclipse/" ".nbprofiler/" ".mp3tag/" ".snes9x/" "../" ".CLion2018.3/" ".wxHexEditor" ".ssh/" "Other/" ".slime-history.eld" ".java/" ".ivy2/" ".m2/" ".node_repl_history" ".steampath" ".pki/" ".xsession-errors" ".foobar2000/" ".gradle/" ".android/" "Рабочий стол/" ".subversion/" ".gitconfig" ".lmmsrc.xml" ".emulator_console_auth_token" ".fceux/" ".config/" ".bash_logout" ".gforth-history" ".thumbnails/" "Общедоступные/" ".profile" ".thunderbird/" ".atom/" ".xsession-errors.old" ".mozilla/" ".bash_profile" ".doomrc" ".steampid" ".steam/" ".openshot_qt/" ".stack/" ".watabou/" ".IdeaIC2018.1/" ".IdeaIC2019.1/" ".darkplaces/" ".org-timestamps/" ".tlauncher/" ".archlauncher/" ".python_history" ".fltk/" ".openjfx/" ".kchmviewer/" ".mplayer/" "eclipse-workspace/" ".ideaLibSources/" ".bash_history" ".xine/" ".dosbox/" ".cache/" ".DbSchema/" "Загрузки/" ".com.wisecoders.dbs.DbSchemaApp/" ".sbt/" ".p2/" ".xchm" ".redstar\\0.log" ".gnome/" ".mysql_history" "Шаблоны/" ".cabal/" "Изображения/" "SPASM/" ".minecraft/" ".Xauthority" ".MCTranscodingSDK/" ".redstar/" "programs/" ".pgAdmin4.14205473332193902643.log" ".gervill/" ".ddd/" ".oracle_jre_usage/" ".virtual_ans_win_config" "Видео/" ".esd_auth" ".mono/" ".gphoto/" ".FBReader/" ".scenebuilder/" ".mputils/" ".idea-build/" ".avidemux6/" ".tooling/" ".dmrc" ".#e.lsp" "Документы/" ".lightworks.thereCanBeOnlyOne" ".wine/" ".pgAdmin4.startup.log" ".kde4/" "workspace/" ".pgadmin/" ".rnd" "Knockin' On Heaven's Door(1997).mkv" ".install4j" "Books/" ".hplip/" ".swt/" ".ICEauthority" ".slime/" ".virtual_ans_load")
+
+ ("/home/zizitop/workspace/lisp/old/" (23981 26492 513278 998000) "kolpakov_ct1_.lisp" "./" "practice2_tasks.lsp" "kolpakov_ct2 (1-я копия).lisp" "lc2.lsp" "lc7.lsp" "kolpakov_ct2 (2-я копия).lisp" "lecture2_tasks.lsp" "lc6.lsp" "tmp.txt" "../" "lecture3_tasks.lsp" "lecture task 6.lsp" "hw2/" "kolpakov_ct2 (8-я копия).lisp" "kolpakov_ct2 (4-я копия).lisp" "kolpakov_ct2 (6-я копия) (1-я копия).lisp" "coffee-state-machine.lsp" "task1_tests.lsp" "kolpakov_ct2 (3-я копия).lisp" "kolpakov_ct2.lisp" "kolpakov_ct1.lisp" "kolpakov_ct2 (5-я копия).lisp" "expected-coffee-output.txt" "kolpakov_ct1 (1-я копия).lisp" "ct1.lisp" "lp.lsp" "atm-state-machine.lsp" "lp2.lsp" "kolpakov_ct2 (6-я копия).lisp" "kolpakov_ct1 (2-я копия).lisp" "state-machine.lsp" "practice1_tasks.lsp" "lc4.lsp" "lc5.lsp" "hw3/" "lc3.lsp" "expected-atm-output.txt" "pr4.lsp" "kolpakov_ct2 (7-я копия).lisp")
+
+ ("/home/zizitop/workspace/haskell/" (23981 26098 26621 975000) "./" "../" "test.hs")
+
+ ("/home/zizitop/workspace/" (23980 27022 779542 588000) "Intellij Java/" "./" "haskell/" "LABS/" "../" "DSUDO/" "LsMath/" "greyStoneBrick.png" "lisp/" "DOSBOX/" "eclipse-cpp workspace /" "Packages/" "PasswordBreaker51984/" "FemtoOS/" "greyStoneBrick.h" "OLD.zip" "CC/")
+
+ ("/home/zizitop/.emacs.d/" (23980 14864 323173 168000) "auto-save-list/" "./" "yasnippet/" "snippets/" "games/" "../" "linum+.el" "ido.last" "sr-speedbar.el" ".cask/" "recentf" "init.el" "elpa/" "color-theme/" "popup.el" "auto-complete/" "ac-comphist.dat")
+
+ ("/home/zizitop/.eclipse/" (23774 40527 298636 193000) "org.eclipse.recommenders.models.rcp/" "./" "../" "org.eclipse.platform_4.9.0_155965261_linux_gtk_x86_64/" "org.eclipse.epp.logging.aeri/" "org.eclipse.platform_4.11.0_155965261_linux_gtk_x86_64/" "org.eclipse.platform_4.10.0_155965261_linux_gtk_x86_64/" "org.eclipse.oomph.p2/" "org.eclipse.tips.state/" "org.eclipse.platform_4.8.0_155965261_linux_gtk_x86_64/" "org.eclipse.oomph.setup/")
+
+ ("/home/" (23372 85 903664 185000) "./" "../" "zizitop/" "lost+found/")
+
+ ("/home/zizitop/workspace/lisp/" (23979 29307 829942 37000) "./" "math/" "../" "kolpakov.lsp" ".#*slime-repl sbcl*" "old/")
+
+ ("/home/zizitop/workspace/lisp/hw3/" (23843 16850 616592 415000) "./" "table2.txt" "../" "table1.txt" ".#hw3.lsp" "table3.txt" "hw3.lsp")
+
+ ("/home/zizitop/workspace/lisp/hw2/" (23837 55519 527706 300000) "./" "task3.lsp" "../" "tests.lsp" "task1.lsp" "task2.lsp" "task6.lsp" "task4.lsp" "task5.lsp")
+
+ ("/home/zizitop/workspace/FemtoOS/" (23674 23865 478364 377000) "linker.ld" "./" "isofiles/" "grub.cfg" "../" ".gitignore" "FemtoOS.iso" "isomake.sh" ".git/" "FemtoOS.bin" "objects/" "LICENSE" "src/" "Makefile" "README.md")
+
+ ("/home/zizitop/workspace/FemtoOS/src/kernel/" (23674 23861 74903 892000) "./" "kernel.c" "shell/" "../" "3dTest.c" "arch/" "control.c")
+
+ ("/home/zizitop/workspace/FemtoOS/src/kernel/arch/i386/" (23674 20014 301645 865000) "./" "kheap.c" "tables.asm" "idt.c" "../" "idt.h" "paging.c" "gdt.h" "asm_utils.h" "arch.c" "int32.asm" "boot.asm" "paging.h" "drivers/" "gdt.c")
+
+ ("/home/zizitop/workspace/FemtoOS/src/kernel/arch/" (23673 29365 944346 674000) "./" "../" "i386/")
+
+ ("/home/zizitop/workspace/FemtoOS/src/" (23673 29365 957680 416000) "./" "../" "libc/" "kernel/" "include/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
