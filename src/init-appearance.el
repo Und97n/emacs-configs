@@ -2,6 +2,7 @@
 ;;; Appearance-related stuff (theme, font, key suggestions, etc.)
 ;;; ============================================================================
 
+(require-external 'gruvbox-theme)
 (load-theme 'gruvbox t)
 (set-frame-font "Mono 10")
 

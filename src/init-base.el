@@ -8,7 +8,7 @@
 (auto-fill-mode      -1)
 (scroll-bar-mode     -1)
 (set-fringe-mode 0)
-(global-linum-mode 0)
+;; (global-linum-mode 0)
 ;; (setq inhibit-startup-screen t)
 
 (setq make-backup-files nil)
