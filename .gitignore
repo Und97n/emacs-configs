@@ -49,4 +49,5 @@ flycheck_*.el
 
 ido.last
 ac-comphist.dat
+custom.el
 
