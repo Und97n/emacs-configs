@@ -12,11 +12,11 @@
 (global-display-line-numbers-mode)
 
 ;; utility functions
-(defun open-init-file ()
+(defun custom-open-init-file ()
   (interactive)
   (find-file (expand-file-name (concat user-emacs-directory "init.el"))))
 
-(defun load-init-file ()
+(defun custom-load-init-file ()
   (interactive)
   (load-file (expand-file-name (concat user-emacs-directory "init.el"))))
 
@@ -34,33 +34,16 @@
     (newline)
     (goto-char (1+ oldpos)))) ; 1+ because newline character was inserted above
 
-;; space-based keybindings
-(define-key evil-motion-state-map " " nil)
-
-(define-key evil-motion-state-map (kbd "SPC j") 'evil-window-down)
-(define-key evil-motion-state-map (kbd "SPC h") 'evil-window-left)
-(define-key evil-motion-state-map (kbd "SPC k") 'evil-window-up)
-(define-key evil-motion-state-map (kbd "SPC l") 'evil-window-right)
-
-(define-key evil-normal-state-map " " nil)
-
-(define-key evil-normal-state-map (kbd "SPC w c") 'delete-window)
-(define-key evil-normal-state-map (kbd "SPC w o") 'delete-other-windows)
-(define-key evil-normal-state-map (kbd "SPC w s") 'split-window-below)
-(define-key evil-normal-state-map (kbd "SPC w v") 'split-window-right)
-(define-key evil-normal-state-map (kbd "SPC w w") 'other-window)
-
-(define-key evil-normal-state-map (kbd "SPC b k") 'ido-kill-buffer)
-(define-key evil-normal-state-map (kbd "SPC b l") 'list-buffers)
-(define-key evil-normal-state-map (kbd "SPC b s") 'ido-switch-buffer)
-(define-key evil-normal-state-map (kbd "SPC f f") 'ido-find-file)
-(define-key evil-normal-state-map (kbd "SPC f s") 'evil-save)
-
-(define-key evil-normal-state-map (kbd "SPC e o") 'open-init-file)
-(define-key evil-normal-state-map (kbd "SPC e s") 'load-init-file)
-
-(define-key evil-normal-state-map (kbd "SPC <return>") 'custom-put-line-bellow)
-(define-key evil-normal-state-map (kbd "SPC S-<return>") 'custom-put-line-above)
+(defun custom-forward-kill-whitespace-or-word ()
+  "If `point' is followed by whitespace kill that.
+Otherwise call `kill-word'"
+  (interactive)
+  (if (looking-at "[ \t\n]")
+      (let ((pos (point)))
+        (re-search-forward "[^ \t\n]" nil t)
+        (backward-char)
+        (kill-region pos (point)))
+    (kill-word 1)))
 
 (global-set-key (kbd "M-}") 'next-buffer)
 (global-set-key (kbd "M-{") 'next-buffer)
@@ -69,10 +52,45 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 
-(if (fboundp 'ido-recentf-open)
-    (define-key evil-motion-state-map (kbd "SPC f r")
-      'ido-recentf-open)
-  (define-key evil-motion-state-map (kbd "SPC f r")
-    'recentf-open-files))
+;; space-based keybindings
+(define-key evil-motion-state-map " " nil)
+
+(define-key evil-insert-state-map (kbd "C-f") 'custom-forward-kill-whitespace-or-word)
+
+(defun define-evil-key (key fnc)
+  (when (fboundp fnc) ; for ignoring keybindings when some packages excluded
+    (define-key evil-normal-state-map key fnc)))
+
+(define-evil-key " " nil)
+
+(define-evil-key (kbd "SPC w c") 'delete-window)
+(define-evil-key (kbd "SPC w o") 'delete-other-windows)
+(define-evil-key (kbd "SPC w s") 'split-window-below)
+(define-evil-key (kbd "SPC w v") 'split-window-right)
+(define-evil-key (kbd "SPC w w") 'other-window)
+
+(define-evil-key (kbd "SPC w j") 'evil-window-down)
+(define-evil-key (kbd "SPC w h") 'evil-window-left)
+(define-evil-key (kbd "SPC w k") 'evil-window-up)
+(define-evil-key (kbd "SPC w l") 'evil-window-right)
+
+(define-evil-key (kbd "SPC b k") 'ido-kill-buffer)
+(define-evil-key (kbd "SPC b l") 'list-buffers)
+(define-evil-key (kbd "SPC b s") 'ido-switch-buffer)
+(define-evil-key (kbd "SPC f f") 'ido-find-file)
+(define-evil-key (kbd "SPC f s") 'save-buffer)
+(define-evil-key (kbd "SPC f r") 'ido-recentf-open)
+
+(define-evil-key (kbd "SPC e o") 'custom-open-init-file)
+(define-evil-key (kbd "SPC e s") 'custom-load-init-file)
+
+(define-evil-key (kbd "SPC <return>") 'custom-put-line-bellow)
+(define-evil-key (kbd "SPC S-<return>") 'custom-put-line-above)
+
+;; LaTeX integration
+(define-evil-key (kbd "SPC l e") 'LaTeX-environment)
+(define-evil-key (kbd "SPC l s") 'LaTeX-section)
+(define-evil-key (kbd "SPC l c") 'TeX-command-master)
+(define-evil-key (kbd "SPC l v") 'TeX-view)
 
 (provide 'init-evil)
