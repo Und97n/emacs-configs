@@ -4,7 +4,7 @@
 
 (require-external 'gruvbox-theme)
 (load-theme 'gruvbox t)
-(set-frame-font "Mono 10")
+(set-frame-font "JetBrains Mono 18")
 
 ;; which-key for shortcuts suggestions
 (require-external 'which-key)
