@@ -10,5 +10,6 @@
 (require 'init-splash)
 (require 'init-ido)
 (require 'init-tabbar)
+(require 'init-latex)
 (require 'init-evil) ; may be disabled if needed
 (require 'init-appearance)
