@@ -58,8 +58,7 @@ Otherwise call `kill-word'"
 (define-key evil-insert-state-map (kbd "C-f") 'custom-forward-kill-whitespace-or-word)
 
 (defun define-evil-key (key fnc)
-  (when (fboundp fnc) ; for ignoring keybindings when some packages excluded
-    (define-key evil-normal-state-map key fnc)))
+  (define-key evil-normal-state-map key fnc))
 
 (define-evil-key " " nil)
 

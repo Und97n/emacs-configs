@@ -13,3 +13,4 @@
 (require 'init-latex)
 (require 'init-evil) ; may be disabled if needed
 (require 'init-appearance)
+(require 'init-misc)

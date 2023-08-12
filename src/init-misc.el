@@ -16,4 +16,4 @@
 (require-external 'auto-complete)
 (ac-config-default)
 
-(provide 'init-appearance)
+(provide 'init-misc)
