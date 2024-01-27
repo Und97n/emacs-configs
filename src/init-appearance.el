@@ -4,6 +4,8 @@
 
 (require-external 'gruvbox-theme)
 (load-theme 'gruvbox t)
-(set-frame-font "JetBrains Mono 18")
+
+(setq initial-frame-alist '((font . "JetBrains Mono 16")))
+(setq default-frame-alist '((font . "JetBrains Mono 16")))
 
 (provide 'init-appearance)
